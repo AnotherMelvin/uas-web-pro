@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Berita Baru</h1>
-    <form action="/pages" method="post" nctype="multipart/form-data">
+    <form action="/pages" method="post" enctype="multipart/form-data">
         @csrf
         Title : <input type="text" name="title_berita"><br>
         Content : <input type="text" name="konten_berita"><br>

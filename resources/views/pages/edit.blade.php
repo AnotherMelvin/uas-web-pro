@@ -11,8 +11,8 @@
     <form action="/pages/{{$page->id}}" method="post" enctype="multipart/form-data">
     @method('PUT')
     @csrf
-    Title   : <input type="text" name="nim" value="{{$page->title}}"><br>
-    Content : <input type="text" name="nama" value="{{$page->content}}"><br>
+    Title   : <input type="text" name="title_berita" value="{{$page->title}}"><br>
+    Content : <input type="text" name="konten_berita" value="{{$page->content}}"><br>
     Photo: <input type="file" name="photo">
     <button type="submit">Submit</button>
     </form>

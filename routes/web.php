@@ -1,8 +1,7 @@
 <?php
 
-use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\Layout;
-use App\Http\Controllers\PageController;
+use App\Http\Controllers\Page;
 use Illuminate\Support\Facades\Route;
 
 
@@ -22,11 +21,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
-Route::get('/',[PageController::class,'index']);
-Route::controller(PageController::class)->group(function(){
-    Route::get('halaman/main','index');
-    Route::get('halaman/bergabung','bergabung');
-    Route::post('halaman/saveBergabung','saveBergabung');
+Route::get('/',[Layout::class,'index']);
+Route::controller(Layout::class)->group(function(){
+    Route::get('layout/home','home');
+    Route::get('layout/index','index');
+    Route::get('layout/bergabung','bergabung');
+    Route::post('layout/saveBergabung','saveBergabung');
 });
 
-Route::resource('pages', BeritaController::class);
+Route::get('/',[Page::class,'index']);
+Route::controller(Page::class)->group(function(){
+    Route::get('pages/index','index');
+    Route::get('pages/bergabung','bergabung');
+    Route::post('pages/saveBergabung','saveBergabung');
+    Route::get('pages/create','create');
+    Route::get('pages/read','read');
+    Route::get('pages/edit/{id}','edit');    
+    Route::post('pages/delete/{id}','delete');  
+});

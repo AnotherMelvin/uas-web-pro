@@ -27,7 +27,15 @@ class BeritaController extends Controller
      */
     public function create(Request $request)
     {
-        return view('pages.create');
+        $path = $request->file('photo')->storePublicly('photos', 'public');
+        $ext = $request->file('photo')->extension();
+        $page = new Pages();
+        $page->title = $request->title_berita;
+        $page->title = $request->konten_berita;
+        $page->photo = $path;
+        $page->save();
+
+        return ('pages.index');
     }
 
     /**
@@ -42,12 +50,11 @@ class BeritaController extends Controller
         $ext = $request->file('photo')->extension();
         $page = new Pages();
         $page->title = $request->title_berita;
-        $page->content = $request->konten_berita;
+        $page->title = $request->konten_berita;
         $page->photo = $path;
         $page->save();
 
-        $berita = Pages::all();
-        return view('pages.index', ['pages' => $berita]);
+        return view('pages.index');
     }
 
     /**
@@ -72,7 +79,7 @@ class BeritaController extends Controller
     public function edit($id)
     {
         $page = Pages::findOrFail($id);
-        return view('pages.edit', ['page'=>$page]);
+        return view('pages.show', ['page'=>$page]);
     }
 
     /**
@@ -89,12 +96,11 @@ class BeritaController extends Controller
         $path = $request->file('photo')->storePublicly('photos', 'public');
         $ext = $request->file('photo')->extension();
         $page->title = $request->title_berita;
-        $page->content = $request->konten_berita;
+        $page->title = $request->konten_berita;
         $page->photo = $path;
         $page->save();
 
-        $berita = Pages::all();
-        return view('pages.index', ['pages' => $berita]);
+        return view('pages.index');
     }
 
     /**
@@ -107,8 +113,6 @@ class BeritaController extends Controller
     {
         $page = Pages::find($id);
         $page->delete();
-
-        $berita = Pages::all();
-        return view('pages.index', ['pages' => $berita]);
+        return view('pages.show');
     }
 }

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller{
     public function index(){
-        return View('pages.main');
+        return View('index');
     }
     public function bergabung(){
         return View('pages.bergabung');

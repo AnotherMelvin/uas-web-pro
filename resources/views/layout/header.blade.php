@@ -1,33 +1,53 @@
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
 
-    <title>Paroki MBSB Kota Wisata</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+      <div id="logo">
+        <a href="/"><img src="src/img/logo.png" width="252px" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
 
-    <!-- Favicons -->
-    <link href="{{ asset('/') }}assets/img/favicon.png" rel="icon">
-    <link href="{{ asset('/') }}assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="{{ asset('/') }}assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="{{ asset('/') }}assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ asset('/') }}assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="{{ asset('/') }}assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="{{ asset('/') }}assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="{{ asset('/') }}assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="{{ asset('/') }}assets/css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: Regna - v4.9.1
-    * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-  </head>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="#">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Sejarah</a></li>
+              <li><a href="#">Peta</a></li>
+              <li><a href="#">Pastor</a></li>
+              <li><a href="#">Lingkungan & Wilayah</a></li>
+              <li><a href="#">Dewan Paroki</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Berita</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Kerygma</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Kitab Suci</a></li>
+                  <li><a href="#">Pemandu</a></li>
+                  <li><a href="#">Emmaus Journey</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Martyria</a></li>
+              <li><a href="#">Koinonia</a></li>
+              <li><a href="#">Liturgia</a></li>
+              <li><a href="#">Marturia</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Download</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Form</a></li>
+              <li><a href="#">Teks</a></li>
+              <li><a href="#">BKSN</a></li>
+              <li><a href="#">APP</a></li>
+              <li><a href="#">AAP</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="#">Renungan</a></li>
+          <li><a class="nav-link" href="#"><img src="src/img/login.png" width="27px" alt="login"></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->

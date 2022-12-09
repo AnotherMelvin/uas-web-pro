@@ -45,6 +45,7 @@
             </ul>
           </li>
           <li><a class="nav-link" href="#">Renungan</a></li>
+          <li><a class="nav-link" href="#">Galeri</a></li>
           <li><a class="nav-link" href="#"><img src="src/img/login.png" width="27px" alt="login"></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

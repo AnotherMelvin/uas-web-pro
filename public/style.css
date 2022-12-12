@@ -8,6 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
     background: #fff;
     color: #666666;
@@ -429,7 +434,7 @@ body {
   
   #hero h1 {
     margin: 30px 0 10px 0;
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 700;
     line-height: 56px;
     text-transform: uppercase;
@@ -446,35 +451,35 @@ body {
   #hero h2 {
     color: #eee;
     margin-bottom: 50px;
-    font-size: 24px;
+    font-size: 32px;
   }
   
   @media (max-width: 768px) {
     #hero h2 {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 24px;
       margin-bottom: 30px;
     }
   }
   
   #hero .btn-get-started {
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 28px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
+    font-family: "Poppins", sans-serif !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
+    display: inline-block !important;
+    padding: 8px 28px !important;
+    border-radius: 50px !important;
+    transition: 0.5s !important;
+    margin: 10px !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
   }
   
   #hero .btn-get-started:hover {
-    background: #2dc997;
-    border: 2px solid #2dc997;
+    background: #2dc997 !important;
+    border: 2px solid #2dc997 !important;
   }
   
   /*--------------------------------------------------------------
@@ -831,6 +836,9 @@ body {
   }
   
   #portfolio .portfolio-item img {
+    width: 1200px;
+    height: 260px;
+    object-fit: cover;
     position: relative;
     top: 0;
     transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -951,6 +959,18 @@ body {
   
   .portfolio-details .portfolio-description p {
     padding: 0;
+  }
+
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 300px;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+    object-fit: cover
   }
   
   /* Team Section

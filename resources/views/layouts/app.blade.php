@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicons -->
-    <link href="/src/img/favicon.png" rel="icon">
-    <link href="/src/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{ asset('src/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('src/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -18,6 +18,8 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     @section('css')
+    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
     @show
 
     <!-- Scripts -->
@@ -85,6 +87,7 @@
     </div>
 
     @section('js')
+    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     @show
 </body>
 </html>

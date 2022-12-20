@@ -78,4 +78,16 @@ Route::middleware(['auth'])->group(function() {
     });
 });
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    return redirect('/');
+});
+
+Route::get('/storage-link', function() {
+    $targetFolder = base_path().'/storage/app/public';
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'].'/storage';
+    symlink($targetFolder, $linkFolder);
+    return redirect('/');
+});
+
 Auth::routes();

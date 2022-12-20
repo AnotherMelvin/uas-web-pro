@@ -23,7 +23,7 @@
             <ul>
               <li class="dropdown"><a href="{{url('articles/berita')}}"><span>Kerygma</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="{{url('articles/berita')}}">Kitab Suci</a></li>
+                  <li><a href="https://ksmbsb.blogspot.com/" target="_blank">Kitab Suci</a></li>
                   <li><a href="{{url('articles/berita')}}">Pemandu</a></li>
                   <li><a href="{{url('articles/berita')}}">Emmaus Journey</a></li>
                 </ul>
@@ -38,13 +38,13 @@
             <ul>
               <li><a href="{{url('download/form')}}">Form</a></li>
               <li><a href="{{url('download/teks')}}">Teks</a></li>
-              <li><a href="/">BKSN</a></li>
+              <li><a href="https://drive.google.com/drive/folders/1ix5haMcuvVEtB-F9qVaWI1ooHEGeniKK" target="_blank">BKSN</a></li>
               <li><a href="/">APP</a></li>
-              <li><a href="/">AAP</a></li>
+              <li><a href="https://drive.google.com/drive/folders/1wziFyjRX0VSC9mm2q5d_Mwq8n_Y0LEs9" target="_blank">AAP</a></li>
             </ul>
           </li>
           <li><a class="nav-link" href="{{url('articles/renungan')}}">Renungan</a></li>
-          <li><a class="nav-link" href="/">Galeri</a></li>
+          <!-- <li><a class="nav-link" href="/">Galeri</a></li> -->
           <li><a class="nav-link" href="/dashboard"><img src="/src/img/login.png" width="27px" alt="login"></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

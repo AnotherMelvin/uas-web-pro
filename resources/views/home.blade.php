@@ -24,7 +24,7 @@
 
                 <div class="card-body">
                     <div class="mb-3">
-                        <div class="d-inline align-middle"><a href="{{url('dashboard/post/create')}}" class="btn btn-primary py-1"><b>+</b></a></div>
+                        <div class="d-inline align-middle"><a href="{{url('dashboard/post/create')}}" class="btn btn-primary pt-1 pb-2"><b>+</b></a></div>
                         <div class="d-inline align-middle ms-2">Create New Article</div>
                     </div>
                     

@@ -45,7 +45,7 @@
           <div class="col-lg-6 order-lg-2 order-1">
             <iframe
               class="video"
-              src="https://www.youtube.com/embed/mnOdWSlpnF8"
+              src="https://www.youtube.com/embed/wmDG92reQN8"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope;"
               allowfullscreen></iframe>
@@ -161,7 +161,7 @@
         </div>
 
         <div class="text-center mt-5">
-          <a href="/"><h3>Lihat Galeri</h3></a>
+          <!-- <a href="/"><h3>Lihat Galeri</h3></a> -->
         </div>
         
       </div>

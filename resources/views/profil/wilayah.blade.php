@@ -9,8 +9,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-8">
-          <h1><b>Daftar Lingkungan & Wilayah</b></h1> 
-          <p>Berikut ini adalah pembagian lingkungan dan wilayah pelayanan Paroki Maria Bunda Segala Bangsa, Kota Wisata, Keuskupan Bogor.</p> <br />
+          <h1><b>Daftar Lingkungan & Wilayah</b></h1>
+          <p>Berikut ini adalah pembagian lingkungan dan wilayah pelayanan Paroki Maria Bunda Segala Bangsa, Kota Wisata, Keuskupan Bogor.</p>
+          <iframe class="mb-3" src="https://www.google.com/maps/d/embed?mid=1RXZekQ424TMQVpYz7PLsdiynfVjpdN9_&ehbc=2E312F" width="100%" height="480px"></iframe>
             <p>Catatan: Wilayah 13, 14, 15, 16 (area Jonggol dan sekitarnya) yang sebelumnya masuk dalam pelayanan Paroki Maria Bunda Segala Bangsa, per Juli 2019 telah diresmikan menjadi Paroki Hati Kudus Yesus. Oleh karena itu, wilayah-wilayah yang ada di Paroki Maria Bunda Segala Bangsa terdiri dari Wilayah 1 s.d. 11 dan Wilayah 17 s.d. 20.</p> <br />
             <ul>
                 <li>Wilayah 17 merupakan hasil pemekaran Wilayah 7.</li>
